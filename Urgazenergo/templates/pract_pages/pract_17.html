@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Юргазэнерго</title>
+
+    <link rel="shortcut icon" href="{% static "images/favicon.ico" %}" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static "css/menu_style.css" %}">
+    <link rel="stylesheet" href="{% static "css/prakt_st.css" %}">
+
+</head>
+
+<body>
+    <div class="menu">
+
+        <img class="logo" src="{% static "images/logo.png" %}" alt="">
+
+        <ul class="list">
+            <li>
+                <a class="list__item " href="{% url "index" %}">Главная</a>
+            </li>
+            <li>
+                <a class="list__item active" href="{% url "praktika_page" %}">Практика</a>
+            </li>
+            <li>
+                <a class="list__item" href="{% url "buro_page" %}">Наше бюро</a>
+            </li>
+            <li>
+                <a class="list__item" href="{% url "team_page" %}">Команда</a>
+            </li>
+            <li>
+                <a class="list__item " href="{% url "news_page" %}">Новости Бюро</a>
+            </li>
+            <li>
+                <a class="list__item" href="{% url "contact_page" %}">Контакты</a>
+            </li>
+        </ul>
+
+        <div class="menu__adres">
+            <p> +7 (985) 784-96-72 <br>
+                +7 (495) 363-19-48<br>
+                info@urgazenergo.com<br>
+                г. Москва ул. Садовая-Спасская,<br>
+                д. 19/1, офис 3</p>
+        </div>
+
+        <p class="ooo">© АБ «Юргазэнерго», 2020</p>
+    </div>
+
+    <div class="burger">
+        <div class="burger__inner">
+            <div class="burger__item first__bar"></div>
+            <div class="burger__item second__bar"></div>
+            <div class="burger__item third__bar"></div>
+        </div>
+    </div>
+
+    <section>
+        <h1 class="section__title">
+            Практика</h1>
+
+        <div class="prakt__info">
+            <div class="info__inner">
+                <div class="info__title">
+                    <h2>Мы добились существенного уменьшения суммы субсидиарной ответственности для нашего Доверителя — члена Совета директоров акционерного общества, при определении суммы в деле о банкротстве акционерного общества</h2>
+                </div>
+
+
+                <p class="info__text">
+                    <b>Команда проекта:</b><br>
+                    адвокат, партнер
+                    <a href="{% url "KDV" %}" class="blue-link">Денис Красовитов</a>;
+                    юрист
+                    <a href="{% url "DKV" %}" class="blue-link">Кирилл Дроздов</a>.
+                </p>
+
+                <p class="info__text">
+                    <b>Задача:</b> <br>
+                    Мы представляли интересы члена Совета директоров акционерного общества. Общество находилось в процедуре банкротства, и конкурсный управляющий подал заявление о привлечении каждого члена совета директоров к субсидиарной ответственности на сумму свыше 7 миллионов рублей.
+
+                </p>
+
+                <p class="info__text"><b>Решение:</b> <br>
+                    Мы тщательно изучили документы о деятельности Общества, роль каждого из участников Общества, фактические обстоятельства.<br>
+                    Исходя из ситуации мы поняли, что полностью освободить от ответственности нашего Доверителя — члена Совета директоров, не получится.<br>
+                    Но мы подготовили доказательства и заявили довод о распределении суммы субсидиарной ответственности пропорционально вине каждого участника Общества.<br>
+                    Суд первой инстанции принял наши доводы при решении вопроса о распределении суммы субсидиарной ответственности.
+
+                </p>
+
+                <p class="info__text"><b>Результат:<br></b>
+                    Суд первой инстанции выделил долю ответственности нашему Доверителю в сумме менее 400 тысяч рублей. <br>
+                    По итогам работы выгода для нашего Доверителя составила более 6 миллионов рублей.<br>
+                    Суд апелляционной инстанции подтвердил законность этого решения.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <script src="{% static "js/script.js" %}"></script>
+
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width">
+    <title>Юргазэнерго</title>
+
+    <link rel="shortcut icon" href="{% static "images/favicon.ico" %}" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static "css/menu_style.css" %}">
+    <link rel="stylesheet" href="{% static "css/prakt_st.css" %}">
+
+</head>
+
+<body>
+    <div class="menu">
+
+        <img class="logo" src="{% static "images/logo.png" %}" alt="">
+
+        <ul class="list">
+            <li>
+                <a class="list__item " href="{% url "index" %}">Главная</a>
+            </li>
+            <li>
+                <a class="list__item active" href="{% url "praktika_page" %}">Практика</a>
+            </li>
+            <li>
+                <a class="list__item" href="{% url "buro_page" %}">Наше бюро</a>
+            </li>
+            <li>
+                <a class="list__item" href="{% url "team_page" %}">Команда</a>
+            </li>
+            <li>
+                <a class="list__item " href="{% url "news_page" %}">Новости Бюро</a>
+            </li>
+            <li>
+                <a class="list__item" href="{% url "contact_page" %}">Контакты</a>
+            </li>
+        </ul>
+
+        <div class="menu__adres">
+            <p> +7 (985) 784-96-72 <br>
+                +7 (495) 363-19-48<br>
+                info@urgazenergo.com<br>
+                г. Москва ул. Садовая-Спасская,<br>
+                д. 19/1, офис 3</p>
+        </div>
+
+        <p class="ooo">© АБ «Юргазэнерго», 2020</p>
+    </div>
+
+   <div class="burger">
+        <div class="burger__inner">
+            <div class="burger__item first__bar"></div>
+            <div class="burger__item second__bar"></div>
+            <div class="burger__item third__bar"></div>
+        </div>
+    </div>
+
+    <section>
+        <h1 class="section__title">
+            Практика</h1>
+
+        <div class="prakt__info">
+            <div class="info__inner">
+                <div class="info__title">
+                    <h2>Мы успешно защитили потерпевшую по делу о домашнем насилии и добились справедливого уголовного наказания для тирана, который долгое время терроризировал потерпевшую</h2>
+                </div>
+
+
+                <p class="info__text">
+                    <b>Команда проекта:</b><br>
+					адвокат, партнер <a href="{% url "KDV" %}" class="blue-link">Денис Красовитов</a>.
+                </p>
+
+                <p class="info__text">
+                    <b>Задача:</b> <br>
+Это дело не относилось к сфере коммерческих отношений, но мы приняли решение защищать молодую девушку, которая страдала от рук домашнего тирана.<br>
+	Долгое время супруг терроризировал свою супругу - молодую девушку, и терпеть домашнее насилие у девушки уже не было сил.<br>
+	Чувство безнаказанности захлестнуло супруга, и в один из дней он совершил преступление в отношении своей жены. <br>	
+	При этом, полиция предпринимала не все меры, направленные на защиту жертвы домашнего насилия. 
+
+                </p>
+
+                <p class="info__text"><b>Решение:</b> <br>
+                 В этом деле мы применили такой способ защиты на стадии расследования дела, как запрет определенных действий для обвиняемого, чтобы оградить девушку от преследований супруга до вынесения приговора.<br>
+	Мы тщательно следили за соблюдением прав потерпевшей на стадии расследования уголовного дела, активно участвовали на стадии предварительного расследования, представляли доказательства вины домашнего тирана.
+
+                </p>
+
+                <p class="info__text"><b>Результат:<br></b>
+Правоохранительные органы направили дело в суд, а суд вынес справедливый приговор супругу, который совершил домашнее насилие в отношении своей жены.
+
+   
+                </p>
+
+            </div>
+
+            
+        </div>
+
+
+
+
+    <script src="{% static "js/script.js" %}"></script>
+
+    </section>
+</body>
+
+</html>

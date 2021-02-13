@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Юргазэнерго</title>
+
+    <link rel="shortcut icon" href="{% static "images/favicon.ico" %}" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static "css/menu_style.css" %}">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+
+
+
+</head>
+
+<body>
+    <div class="menu">
+
+        <img class="logo" src="{% static "images/logo.png" %}" alt="">
+
+        <ul class="list">
+            <li>
+                <a class="list__item active" href="{% url "index" %}">Главная</a>
+            </li>
+            <li>
+                <a class="list__item" href="{% url "praktika_page" %}">Практика</a>
+            </li>
+            <li>
+                <a class="list__item" href="{% url "buro_page" %}">Наше бюро</a>
+            </li>
+            <li>
+                <a class="list__item" href="{% url "team_page" %}">Команда</a>
+            </li>
+            <li>
+                <a class="list__item " href="{% url "news_page" %}">Новости Бюро</a>
+            </li>
+            <li>
+                <a class="list__item" href="{% url "contact_page" %}">Контакты</a>
+            </li>
+        </ul>
+
+        <div class="menu__adres">
+            <p> +7 (985) 784-96-72 <br>
+                +7 (495) 363-19-48<br>
+                info@urgazenergo.com<br>
+                г. Москва ул. Садовая-Спасская,<br>
+                д. 19/1, офис 3</p>
+        </div>
+
+        <p class="ooo">© АБ «Юргазэнерго», 2020</p>
+    </div>
+
+    <div class="burger">
+        <div class="burger__inner">
+            <div class="burger__item first__bar"></div>
+            <div class="burger__item second__bar"></div>
+            <div class="burger__item third__bar"></div>
+        </div>
+    </div>
+
+
+    <header style=" background-image: url({% static "images/fotofon_2.png" %});">
+        <h1 class="header__title">
+            Системно<br>
+            Структурно<br>
+            Последовательно
+        </h1>
+    </header>
+
+    <section>
+        <div class="section__title">
+            <h4>Уважаемые дамы и господа</h4>
+        </div>
+
+        <div class="section__items">
+            <div class="section__text">
+                <p class="section__item special">От имени Адвокатское Бюро «Юргазэнерго»
+                    я рад приветствовать Вас на нашем сайте, который поможет Вам получить необходимую информацию о деятельности Бюро для принятия решения
+                    о возможной совместной работе.</p>
+
+                <p class="section__item">Адвокатское Бюро «Юргазэнерго», созданное в 2004 году,в настоящее время является динамично развивающейся юридической компанией, способной предоставить полный комплекс услуг нашим клиентам в области уголовного административного и гражданского права, обеспечить защиту прав российских граждан как на территории Российской Федерации, так и зарубежном, оказать помощь и содействие в решении финансовых и экономических проблем в области бизнеса с использованием современных инструментов в сфере налогообложения, защиты активов и управления.</p>
+
+                <p class="section__item">Особое место в истории нашего Бюро занимает деятельность по защите прав и свобод граждан РФв Европейском суде по правам человека (European Courtof Human Rights). Положительная практика взаимодействия с Европейским судом, в подтверждении которой имеет место 12 выигранных дел в пользу российских граждан, свидетельствует о возможности адвокатов Бюро обеспечивать защиту интересов наших доверителей,в том числе, на международном уровне.</p>
+            </div>
+
+            <div class="section__text">
+                <p class="section__item">Наряду с положительной практикой ведения уголовных, общегражданских и иных дел, одним из основных направлений деятельности АБ «Юргазэнерго» является защита интересов российских компаний и физических лиц в области энергетики, включая защиту, в судебном порядке, экономически обоснованных тарифов на энергоресурсы и жилищно — коммунальные услуги, оспаривание правомерности применения финансовых санкций для потребителей энергоресурсов.</p>
+
+                <p class="section__item">Учитывая существенные изменения законодательства стран ЕС и США по , «деофшоризации бизнеса», которые произошли в последние годы, наше адвокатское бюро уделяет значительное внимание вопросам оказания квалифицированной юридической помощи российским юридическим и физическим лицам, имеющих зарубежные активы, по реструктуризации бизнеса, соблюдению налоговых режимов, защите своей зарубежной собственности и другим аспектам деятельности вне территории Российской Федерации.</p>
+
+                <p class="section__item">Адвокатское Бюро имеет офисы и представительствав г. Армавире, Краснодарский Край (Россия), г. Харькове (Украина), г. Сан-Диего (Калифорния, США).</p>
+
+                <p class="section__item"> Более полную информацию о деятельностиАБ «Юргазэнерго» можно получить, обратившиськ нашим адвокатам по телефонам или электронной почте, указанные в наших
+                    <span class="section__item__span"><a href="{% url "contact_page" %}">Контактах.</a></span>
+                </p>
+            </div>
+        </div>
+
+
+        <footer>
+            <h1 class="footer__title">Мы будем Рады видеть Вас в числе клиентов нашего Бюро.</h1>
+        </footer>
+    </section>
+
+
+    <script src="{% static "js/script.js" %}"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Юргазэнерго</title>
+
+    <link rel="shortcut icon" href="{% static "images/favicon.ico" %}" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static "css/menu_style.css" %}">
+    <link rel="stylesheet" href="{% static "css/prakt_st.css" %}">
+
+</head>
+
+<body>
+    <div class="menu">
+
+        <img class="logo" src="{% static "images/logo.png" %}" alt="">
+
+        <ul class="list">
+            <li>
+                <a class="list__item " href="{% url "index" %}">Главная</a>
+            </li>
+            <li>
+                <a class="list__item active" href="{% url "praktika_page" %}">Практика</a>
+            </li>
+            <li>
+                <a class="list__item" href="{% url "buro_page" %}">Наше бюро</a>
+            </li>
+            <li>
+                <a class="list__item" href="{% url "team_page" %}">Команда</a>
+            </li>
+            <li>
+                <a class="list__item " href="{% url "news_page" %}">Новости Бюро</a>
+            </li>
+            <li>
+                <a class="list__item" href="{% url "contact_page" %}">Контакты</a>
+            </li>
+        </ul>
+
+        <div class="menu__adres">
+            <p> +7 (985) 784-96-72 <br>
+                +7 (495) 363-19-48<br>
+                info@urgazenergo.com<br>
+                г. Москва ул. Садовая-Спасская,<br>
+                д. 19/1, офис 3</p>
+        </div>
+
+        <p class="ooo">© АБ «Юргазэнерго», 2020</p>
+    </div>
+
+    <div class="burger">
+        <div class="burger__inner">
+            <div class="burger__item first__bar"></div>
+            <div class="burger__item second__bar"></div>
+            <div class="burger__item third__bar"></div>
+        </div>
+    </div>
+
+    <section>
+        <h1 class="section__title">
+            Практика</h1>
+
+        <div class="prakt__info">
+            <div class="info__inner">
+                <div class="info__title">
+                    <h2> Крупная иностранная архитектурная компания защитилась от претензий заказчика на 130 млн. рублей</h2>
+                </div>
+
+
+                <p class="info__text">
+                    <b>Команда проекта:</b><br>
+                    адвокат, управляющий партнер
+                    <a href="{% url "BSV" %}" class="blue-link">Сергей Васильевич Бровченко</a>;
+                    партнер
+                    <a href="{% url "FAI" %}" class="blue-link">Алексей Иванович Федосеев</a>;
+                    адвокат, партнер
+                    <a href="{% url "BKV" %}" class="blue-link">Константин Барановский</a>;
+                    адвокат, партнер
+                    <a href="{% url "KDV" %}" class="blue-link">Денис Красовитов</a>;
+                    юрист
+                    <a href="{% url "DKV" %}" class="blue-link">Кирилл Дроздов</a>.
+                </p>
+
+                <p class="info__text">
+                    <b>Задача:</b> <br>
+                    Иностранная архитектурная компания, которая разрабатывала проект одного из аэропортов России, могла стать жертвой действий недобросовестного заказчика. <br>
+                    Архитектурная компанию получила право на работы по проектированию одного из аэропортов России в результате конкурса.<br>
+                    После того, как наш Доверитель — архитектурная компания, приступила к работе, Заказчик стал «атаковать» проектировщика надуманными требованиями к проектной документации, постоянно изменял исходные данные. <br>
+                    Это не позволяло проектировщику закончить проектные работы в срок, который стороны установили в договоре.<br>
+                    Заказчик обратился в суд с иском о взыскании денег, которые ранее перечислил проектировщику в счет выполнения проектных работ, и неустойки.
+
+                </p>
+
+                <p class="info__text"><b>Решение:</b> <br>
+                    Мы проанализировали всю документацию и переписку проектировщика и заказчика.<br>
+                    После этого мы определили слабые места в позиции заказчика, и организовали вокруг ситуации еще один арбитражный судебный спор.<br>
+                    Мы выстроили позиции по трем делам таким образом, что исход спора перестал целиком зависеть от позиции заказчика по его иску. <br>
+                    Для каждого процесса была найдена самостоятельная позиция, логично включенная в общую картину защиты.
+
+
+                </p>
+
+                <p class="info__text"><b>Результат:<br></b>
+                    Нам удалось достичь поставленной цели: заказчик сел за стол переговоров, после чего заказчик и проектировщик подписали мировое соглашение, которое устраивало обе стороны.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <script src="{% static "js/script.js" %}"></script>
+
+    </section>
+</body>
+
+</html>
